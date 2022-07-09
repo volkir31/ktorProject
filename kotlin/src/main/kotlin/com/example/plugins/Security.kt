@@ -19,6 +19,7 @@ fun Application.configureSecurity() {
 
     routing {
         get("/login") {
+            println(23)
             if (call.sessions.get<MySession>() != null) {
                 call.respondRedirect("articles")
                 return@get
