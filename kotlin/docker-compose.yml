@@ -14,7 +14,7 @@ services:
       POSTGRES_DB: ktor
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
-      - "54333:5432"
+      - "54336:5432"
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready -U postgres" ]
       interval: 1s
