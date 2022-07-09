@@ -13,7 +13,6 @@ import io.ktor.server.util.*
 fun Application.configureRouting() {
     routing {
         get("/") {
-            print(123)
             call.respondRedirect("articles")
         }
         route("articles") {
